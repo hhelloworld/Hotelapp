@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_centerVertical="true"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="40dp"
+    android:background="@drawable/background"
+    tools:context=".login">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="135dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/hotel"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:text="Login"
+        android:textColor="#f7f7ee"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_below="@id/judul"
+        android:hint="Email"
+        android:layout_marginTop="30dp"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textColor="#f7f7ee"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittext_custom"
+        android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+        android:drawablePadding="20dp"
+        android:paddingLeft="10dp"
+        android:textColorHint="#ffff"/>
+
+    <EditText
+        android:id="@+id/login_pass"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/login_email"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_custom"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+        android:drawablePadding="20dp"
+        android:paddingLeft="10dp"
+        android:textColorHint="#ffff"/>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custmbtn"
+        android:text="Login"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/login_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Belum memiliki Akun? Daftar disini"
+        android:textColor="#E91E63"
+        android:onClick="reg"
+     />
+
+
+</RelativeLayout>

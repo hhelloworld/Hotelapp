@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:paddingHorizontal="40dp"
+    tools:context=".register"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/daftar_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Daftar"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:textSize="28sp" />
+
+    <EditText
+        android:id="@+id/daftar_fullname"
+        android:layout_below="@id/daftar_judul"
+        android:hint="Full name"
+        android:paddingTop="43dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#ffff"/>
+
+    <EditText
+        android:id="@+id/daftar_email"
+        android:layout_below="@id/daftar_fullname"
+        android:hint="Email"
+        android:paddingTop="43dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#ffff"/>
+
+    <EditText
+        android:id="@+id/daftar_password"
+        android:layout_below="@id/daftar_email"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingTop="43dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#ffff"/>
+
+    <EditText
+        android:id="@+id/daftar_repassword"
+        android:layout_below="@id/daftar_password"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingTop="43dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#ffff"/>
+
+    <EditText
+        android:id="@+id/daftar_telepon"
+        android:layout_below="@id/daftar_repassword"
+        android:hint="Phone Number"
+        android:paddingTop="43dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#ffff"/>
+
+    <Button
+        android:id="@+id/daftar_button"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/daftar_telepon"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="63dp"
+        android:background="@drawable/custmbtn"
+        android:text="Daftar"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/daftar_buttonback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/daftar_telepon"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/custmbtn"
+        android:text="Back"
+        android:textColor="#000" />
+
+
+</RelativeLayout>

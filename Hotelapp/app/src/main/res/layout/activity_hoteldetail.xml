@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HotelDetail"
+    android:background="@drawable/backgroudrow">
+
+    <RelativeLayout
+        android:paddingTop="40dp"
+        android:paddingBottom="90dp"
+        android:paddingHorizontal="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+
+        android:layout_height="170dp"
+        android:layout_width="250dp"
+        android:id="@+id/gambar2"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gambar2"
+        android:layout_marginTop="5dp"
+        android:text="Nama Hotel"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/namahotel2"
+        android:textColor="@color/text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/namahotel2"
+        android:layout_marginTop="5dp"
+        android:text="Harga"
+        android:id="@+id/price2"
+        android:textColor="@color/text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/price2"
+        android:layout_marginTop="5dp"
+        android:text="No Tlp"
+        android:id="@+id/notlp2"
+        android:textColor="@color/text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/notlp2"
+        android:layout_marginTop="5dp"
+        android:text="Alamat"
+        android:id="@+id/alamat2"
+        android:textColor="@color/text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/alamat2"
+        android:layout_marginTop="5dp"
+        android:text="LAT"
+        android:id="@+id/lat2"
+        android:textColor="@color/text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/lat2"
+        android:layout_marginTop="5dp"
+        android:text="LNG"
+        android:id="@+id/lng2"
+        android:textColor="@color/text" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/lng2"
+        android:layout_marginTop="5dp"
+        android:text="ID"
+        android:id="@+id/id2"
+        android:textColor="@color/text" />
+
+
+        <fragment
+            android:id="@+id/displaymap"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="300dp"
+            android:layout_height="350dp"
+            android:layout_below="@+id/id2"
+            android:layout_marginTop="28dp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/textbooking"
+            android:layout_below="@id/displaymap"
+            android:text="Booking tanggal"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/startdate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/textbooking"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="33dp"
+            android:layout_toRightOf="@id/settgl1"
+            android:textColor="@color/text"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/enddate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/startdate"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="41dp"
+            android:layout_toRightOf="@id/settgl2"
+            android:textColor="@color/text"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/settgl1"
+            android:text="start"
+            android:layout_below="@id/textbooking"
+            android:layout_marginTop="25dp"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/colorAccent"
+            android:background="@drawable/shape" />
+
+        <Button
+            android:id="@+id/settgl2"
+            android:text="end"
+            android:layout_width="100dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/settgl1"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/colorAccent"
+            android:background="@drawable/shape" />
+
+        <TextView
+            android:id="@+id/dateresult"
+            android:textSize="20sp"
+            android:layout_below="@+id/settgl2"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+        <Button
+        android:id="@+id/taptobook"
+        android:text="book now"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settgl2"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+            android:backgroundTint="#E91E63"
+            android:background="@drawable/shape" />
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
